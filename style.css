@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    background: #F2F5EA;
+    padding-top: 70px; 
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 9;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+header h1{
+    font-weight: 800;
+}
+
+
+header a{
+    font-size: 20px;
+    color: #F2F5EA;
+}
+
+.nav_header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F5EA;
+    border-bottom: 2px solid #2C363F;
+}
+
+.nav_button{
+    font-size: 26px;
+}
+
+.nav_lists{
+    position: absolute;
+    width: 100vw;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2C363F;
+    gap: 12px;
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-110%);
+}
+
+.nav_lists.open{
+    transform: translateY(0%);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+.home .left {
+    color: #2C363F;
+}
+
+.home img {
+    width: 80vw;
+    align-content: center;
+}
+
+.home .line {
+    width: 180px;
+    height: 6.5px; 
+    background-color: #2C363F;
+    margin-bottom: 10px ;
+    margin-top: 20px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.about div{
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+.skill{
+    margin-top: 40px;
+    background-color: #2C363F;
+    padding: 20px;
+}
+
+.skill h1{
+    text-align: center;
+    font-size: 60px;
+    color: #F2F5EA;
+    font-weight: 800;
+}
+
+.skill h2{
+    font-size: 40px;
+    font-weight: 950;
+}
+
+.skill h3{
+    font-size: 25px;
+    color: #F2F5EA;
+}
+
+.skill .skill_divition{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill .skill_language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.skill .skill_language .progress_bar{
+    width: 80vw;
+    height: 50px;
+    background-color: #000;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.skill .skill_language .progress_value_1{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 64vw;
+    height: 40px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_language .progress_value_2{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 72vw;
+    height: 40px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_language p {
+    position: absolute;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.skill .skill_hardskill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.skill .skill_hardskill .progress_bar{
+    width: 80vw;
+    height: 40px;
+    background-color: #000;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.skill .skill_hardskill .progress_value_1{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 40vw;
+    height: 29px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_hardskill .progress_value_2{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 48vw;
+    height: 29px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_hardskill .progress_value_3{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 56vw;
+    height: 29px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_hardskill .progress_value_4{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 64vw;
+    height: 29px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_hardskill .progress_value_5{
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    width: 72vw;
+    height: 29px;
+    background-color: #F2F5EA;
+    border-radius: 30px;
+}
+
+.skill .skill_hardskill p {
+    position: absolute;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 800;
+    margin-top: 11.5px;
+    font-size: 15px;
+}
+
+footer{
+    padding: 15px;
+}
+
+footer .footer_word{
+    font-size: 40px;
+    font-weight: 950;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+footer .footer_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.facebook, .instagram, .linkedin, .whatsapp, .line{
+    transition: 0.3s;
+    color: #2C363F;
+    font-size: 38px;
+}
+
+.facebook:hover{
+    color: #0866FF;
+    text-shadow: 0 0 2px;
+    font-size: 45px;
+}
+
+.instagram:hover{
+    color: #E09F75;
+    text-shadow: 0 0 2px;
+    font-size: 45px;
+}
+
+.linkedin:hover{
+    color: #0A66C2;
+    text-shadow: 0 0 2px;
+    font-size: 45px;
+}
+
+.whatsapp:hover{
+    color: #55D062;
+    text-shadow: 0 0 2px;
+    font-size: 45px;
+}
+
+.line:hover{
+    color: #00B800;
+    text-shadow: 0 0 2px;
+    font-size: 45px;
+}
+
+@media (min-width: 768px){
+
+    nav{
+        display: flex;
+    }
+
+
+    nav h1{
+        margin-left: 10px;
+    }
+
+    .nav_header{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: #F2F5EA;
+    }
+
+    header a{
+        color: black;
+    }
+
+    .nav_lists{
+        position: fixed;
+        list-style: none;
+        display: static;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none;
+        gap: 40px;
+        z-index: 12;
+        top: 9px;
+        font-weight: 950;
+    }
+
+    .nav_lists.open {
+        transform: none;
+    }
+
+    .nav_button {
+        display: none;
+    }
+    
+    .home{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .home .left{
+        text-align: justify;
+        width: 70vw;
+    }
+    
+    .home .right{
+        position: absolute;
+        z-index: -1;
+        width: auto;
+        height: 60vh;
+        right: 0px;
+        padding-right: 60px;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skill .skill_divition{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+
+    .skill .skill_language .progress_bar{
+        width: 40vw;
+    }
+    
+    .skill .skill_language .progress_value_1{
+        width: 32vw;
+    }
+    
+    .skill .skill_language .progress_value_2{
+        width: 36vw;
+    }
+
+    .skill .skill_hardskill{
+        margin-top: 38px;
+    }
+    
+    .skill .skill_hardskill .progress_bar{
+        width: 40vw;
+    }
+
+    .skill .skill_hardskill .progress_value_1{
+        width: 20vw;
+    }
+    .skill .skill_hardskill .progress_value_2{
+        width: 24vw;
+    }
+    .skill .skill_hardskill .progress_value_3{
+        width: 28vw;
+    }
+    .skill .skill_hardskill .progress_value_4{
+        width: 32vw;
+    }
+    .skill .skill_hardskill .progress_value_5{
+        width: 36vw;
+    }
+    .footer{
+        padding: 40px;
+    }
+}

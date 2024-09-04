@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <h1>Chris</h1>
+                <div class="nav_button" id="nav-button">
+                    <span class="pointer"><i class="ri-menu-line" ></i></span>
+                </div>
+            </div>
+            <ul class="nav_lists" id="nav-lists">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#skill">SKILL</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="left">
+            <div class="line"></div>
+            <div>
+                <h1>I'M CHRISTOPHER WEBDEVELOPER</h1>
+                <h2>I Make a Decent Website for this assigment imo Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae ipsum tempore quisquam nobis perferendis tempora dignissimos quaerat impedit ut eius officiis, quo excepturi. Iste, mollitia itaque! Praesentium, quibusdam culpa.</h2>
+            </div>
+        </div>
+        <img class="right" src="William.png" alt="Gambar William">
+    </section>
+    <section class="about" id="about">
+        <div>
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repellat velit eaque repudiandae doloremque possimus ea odit, unde praesentium incidunt recusandae amet dolorem nulla qui magni? Neque velit autem molestias.</p>
+        </div>
+        <div>
+            <h1>
+                Education
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos eaque delectus deleniti voluptatum distinctio ad, impedit dicta fuga accusamus, vitae nemo quam rerum repellat optio? Est consequatur incidunt deserunt!</p>
+        </div>
+        <div>
+            <h1>
+                Experience
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel reiciendis maiores alias natus aliquam dolorum eos culpa placeat esse. Culpa sed impedit fugit harum quod nostrum atque veniam vero?</p>
+        </div>
+    </section>
+    <section class="skill" id="skill">
+            <h1>SKILLS</h1>
+        <div class="skill_divition">
+            <div class="skill_language">
+                <h2>LANGUAGE</h2>
+                <h3>
+                    Indonesia
+                </h3>
+                <div class="progress_bar">
+                    <div class="progress_value_1">
+                    </div>
+                    <p>80%</p> 
+                </div>
+                <h3>
+                    English
+                </h3>                
+                <div class="progress_bar">
+                    <div class="progress_value_2"> 
+                    </div>
+                    <p>90%</p>
+                </div>
+            </div>
+            <div class="skill_hardskill">
+                <h2>HARDSKILL</h2>
+                <div class="grid">
+                    <h3>
+                        HTML
+                    </h3>  
+                    <div class="progress_bar">
+                        <div class="progress_value_1"> 
+                        </div>
+                        <p>50%</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3>
+                        CSS
+                    </h3>  
+                    <div class="progress_bar">
+                        <div class="progress_value_2"> 
+                        </div>
+                        <p>60%</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3>
+                        Python
+                    </h3>  
+                    <div class="progress_bar">
+                        <div class="progress_value_3"> 
+                        </div>
+                        <p>70%</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3>
+                        Java
+                    </h3>  
+                    <div class="progress_bar">
+                        <div class="progress_value_4"> 
+                        </div>
+                        <p>80%</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h3>
+                        PHP
+                    </h3>  
+                    <div class="progress_bar">
+                        <div class="progress_value_5"> 
+                        </div>
+                        <p>90%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="footer_title_word">Contact Me:</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In aliquid optio dolorem quod natus saepe deleniti, molestiae explicabo, totam vero vel impedit, perspiciatis culpa fugit repudiandae minus tempore porro nihil.</p>
+    </div>
+        <div class="footer_link">
+            <a href="" target="_blank" class="pointer">
+                <span class="facebook"><i class="ri-facebook-box-fill"></i></span></i></a>
+            <a href="" target="_blank"><span class="instagram"><i class="ri-instagram-fill"></i></span></a>
+            <a href="" target="_blank"><span class="linkedin"><i class="ri-linkedin-box-fill"></i></span></a>
+            <a href="" target="_blank"><span class="whatsapp"><i class="ri-whatsapp-fill"></i></span></a>
+            <a href="" target="_blank"><span class="line"><i class="ri-line-fill"></i></span></a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const menu = document.getElementById("nav-button");
+    const navLists = document.getElementById("nav-lists");
+    const menuIcon = menu.querySelector("i");
+
+    menu.addEventListener("click", () => {
+        navLists.classList.toggle("open");
+        const isOpen = navLists.classList.contains("open");
+        menuIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    });
+</script>
+</html>
