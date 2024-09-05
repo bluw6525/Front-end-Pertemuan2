@@ -112,15 +112,17 @@ header a{
 }
 
 .about{
+    text-align: center;
+}
+
+.about .box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 50px;
     gap: 50px;
 }
 
-.about div{
+.about .box div{
     border: 3px solid #000;
     border-radius: 10px;
     padding: 10px;
@@ -407,10 +409,12 @@ footer .footer_link{
         padding-right: 60px;
     }
 
-    .about {
-        flex-direction: row;
-        justify-content: space-between;
+    .about .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
+
     .skill .skill_divition{
         flex-direction: row;
         justify-content: space-between;
