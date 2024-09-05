@@ -73,6 +73,12 @@ header a{
     transform: translateY(0%);
 }
 
+.nav_lists a:hover{
+    font-weight: 800;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px #000;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -116,6 +122,11 @@ header a{
     margin: 0px 30px;
 }
 
+.about h1:hover{
+    font-size: 30px;
+    text-shadow: 0px 0px 8px #000;
+}
+
 .skill{
     margin-top: 40px;
     background-color: #2C363F;
@@ -127,6 +138,10 @@ header a{
     font-size: 60px;
     color: #F2F5EA;
     font-weight: 800;
+}
+
+.skill h1:hover{
+    text-shadow: 0px 0px 10px white;
 }
 
 .skill h2{
@@ -262,6 +277,10 @@ header a{
     font-weight: 800;
     margin-top: 11.5px;
     font-size: 15px;
+}
+
+.progress_bar:hover{
+    box-shadow: 0px 0px 6px #F2F5EA;
 }
 
 footer{
