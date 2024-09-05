@@ -89,7 +89,12 @@ header a{
     margin: 10%;
 }
 
+.home text{
+    width: 50%;
+}
+
 .home .left {
+    text-align: justify;
     color: #2C363F;
 }
 
@@ -390,8 +395,7 @@ footer .footer_link{
     }
 
     .home .left{
-        text-align: justify;
-        width: 70vw;
+        width: 60vw;
     }
     
     .home .right{
